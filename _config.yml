@@ -1,0 +1,13 @@
+# Site settings
+title: Ticketlab - Sports Ticket Alerts
+email: steven@ticketlab.com
+description: >
+  TicketLab is bringing advanced searches and ticket notifications to the world of sports tickets.
+  Search the way you want based on your schedule and budget.
+baseurl: ""
+url: "http://www.ticketlab.com"
+twitter_username: jekyllrb
+github_username:  jekyll
+
+# Build settings
+markdown: kramdown

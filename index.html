@@ -1,0 +1,44 @@
+---
+layout: default
+---
+<section id="welcome">
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="jumbotron__header">Get notified when the tickets you want become available.</h1>
+            <p>We'll notify you when we are up and running.</p>
+        </div>
+        <div class="container">
+            <div class="col-xs-12 col-sm-6 col-md-offset-3">
+            <form class="form-inline" role="form" v-on:submit="handle">
+                <div class="form-group" :class="{'has-error': errors.has('email')}">
+                    <input name="validate" type="hidden" v-model="form.validate">
+                    <input name="email" type="text" id="email" v-model="form.email" class="form-control" placeholder="Email" autocapitalize="off">
+                    <button type="submit" class="btn btn-primary"><i class="fa fa-btn fa-check"></i>Sign up</button>
+                    <span style="clear: both; display: block; color: red; margin-top: 10px;">{% raw %}{{ errors.get('email') }}{% endraw %}</span>
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="partners">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2>We're offering <strong>over 1 million</strong> tickets to <strong>more than 2,500</strong> games through our partners</h2>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-3">
+                <figure><img src="http://static.ticketlab.com.s3.amazonaws.com/ticket-network-logo.png"></figure>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-3">
+                <figure><img src="http://static.ticketlab.com.s3.amazonaws.com/ticketsnow-logo.png"></figure>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-3">
+                <figure><img src="http://static.ticketlab.com.s3.amazonaws.com/vividseats-logo.png"></figure>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-3">
+                <figure><img src="http://static.ticketlab.com.s3.amazonaws.com/ticket-evolution-logo.png"></figure>
+            </div>
+        </div>
+    </div>
+</section>
