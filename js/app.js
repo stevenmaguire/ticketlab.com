@@ -51,7 +51,7 @@
                 event.preventDefault();
                 this.isSuccess = false;
                 this.errors.forget();
-                this.$http.post('http://collector.stevil.co/api/properties/83b22cf8-4d71-4c5c-9d33-51087059c017/snapshots', this.form)
+                this.$http.post('https://collector.stevil.co/api/properties/83b22cf8-4d71-4c5c-9d33-51087059c017/snapshots', this.form)
                     .then(function (response) {
                         self.isSuccess = true;
                     }, function(err) {
